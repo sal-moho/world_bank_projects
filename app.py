@@ -55,7 +55,7 @@ with countries_col2:
 
 st.header("Country fact sheet")
 country_list = sorted(list(find_unique_countries(countries_df)))
-selected_country = st.selectbox("Select country", country_list, index = None)
+selected_country = st.selectbox("Select country", country_list)
 country_df = select_country(selected_country, projects_df)
 
 country_total_projects = country_df.shape[0]
